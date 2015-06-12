@@ -1,0 +1,16 @@
+<h2>List of Answers</h2>
+
+<ul class="alist">
+{{#each}}
+  <li>
+    {{#link-to 'answer' this.id}}<img src={{image}}>{{/link-to}}
+    <p>
+      Owner: {{owner}} ||
+
+      Backstory: {{backstory}} ||
+
+      Starting price: {{starting_price}}
+    </p>
+  </li>
+{{/each}}
+</ul>
