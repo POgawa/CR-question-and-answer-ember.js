@@ -20,23 +20,28 @@
 <hr>
   <h3>Date asked: {{date}}</h3>
 <hr>
-  <h2>Answers:</h2>
-<hr>
-  <ul class="qlist">
+  {{#if answers}}
+    <h2>Answers:</h2>
+  <hr>
+    <ul class="qlist">
 
-    {{#each answers}}
-     <li class="flat">
-       <h4>Response:</h4>
-       <p>   {{#link-to 'answer' this.id}} <i> {{description}}</i>{{/link-to}}</p>
-       <p> Answered on: {{date}} by {{owner}}</p></li>
-       <hr>
-    {{/each}}
+      {{#each answers}}
+       <li class="flat">
+         <h4>Response:</h4>
+         <p>   {{#link-to 'answer' this.id}} <i> {{description}}</i>{{/link-to}}</p>
+         <p> Answered on: {{date}} by {{owner}}</p></li>
+         <hr>
+      {{/each}}
 
-  </ul>
-  <p>{{#link-to 'new-answer' this.id classNames="btn btn-primary"}}Answer this question{{/link-to}}</p>
-   {{outlet}}
-
-
+    </ul>
+    <p>{{#link-to 'new-answer' this.id classNames="btn btn-primary"}}Add another answer to this question{{/link-to}}</p>
+     {{outlet}}
+  {{else}}
+    <h1>There are no answers currently.</h1>
+    <p>{{#link-to 'new-answer' this.id classNames="btn btn-primary"}}Answer this question{{/link-to}}</p>
+     {{outlet}}
+  {{/if}}
   <button class="btn btn-primary" {{action 'edit'}}>Edit question</button>
   <button class="btn btn-danger" {{action 'delete'}}>Delete question</button>
+
 {{/if}}
