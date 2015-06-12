@@ -1,5 +1,7 @@
 ##EmberJS Code Review
-#Your project:
+
+## By Paul Ogawa www.github.com/pogawa
+#The project:
 
 #For this project, you will make a question and answer message board. The idea is that a user can submit a question and other users can respond with answers.
 
