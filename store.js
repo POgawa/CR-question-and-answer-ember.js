@@ -1,2 +1,2 @@
-AuctionHouse.ApplicationSerializer = DS.LSSerializer.extend();
-AuctionHouse.ApplicationAdapter = DS.LSAdapter.extend();
+QandA.ApplicationSerializer = DS.LSSerializer.extend();
+QandA.ApplicationAdapter = DS.LSAdapter.extend();

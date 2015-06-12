@@ -1,0 +1,24 @@
+
+
+<h3>Current Questions:</h3>
+{{currentDate}}
+<hr>
+<ul class="lotlist">
+{{#each}}
+
+  <li>
+    {{#link-to 'question' this.id classNames="question-title"}}{{title}}{{/link-to}}
+  </li>
+{{/each}}
+</ul>
+<hr>
+<p>{{#link-to 'new-question' classNames="btn btn-primary"}}Ask New Question{{/link-to}}</p>
+<!-- <p>Items List</p>
+<ul>
+
+  {{controllers.answers.title}}
+  {{#each controllers.answers.model}}
+
+    <li>{{title}}</li>
+  {{/each}} -->
+<!-- </ul> -->

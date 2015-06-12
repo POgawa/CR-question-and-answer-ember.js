@@ -18,18 +18,18 @@
 {{else}}
   <h3>Description: {{description}}</h3>
 
-  <h3>Auction date: {{date}}</h3>
+  <h3>Date asked: {{date}}</h3>
 
-  <h2>Items:</h2>
+  <h2>Answers:</h2>
 
   <ul class="lotlist">
 
-    {{#each items}}
-     <li class="flat">{{#link-to 'item' this.id}}<img src={{image}} class="img-thumbnail">{{/link-to}} {{title}} {{description}}</li>
+    {{#each answers}}
+     <li class="flat"> {{title}} {{description}}</li>
     {{/each}}
 
   </ul>
-  <p>{{#link-to 'new-item' this.id classNames="btn btn-primary"}}Add New Item to this lot{{/link-to}}</p>
+  <p>{{#link-to 'new-answer' this.id classNames="btn btn-primary"}}Add New Item to this lot{{/link-to}}</p>
    {{outlet}}
 
 

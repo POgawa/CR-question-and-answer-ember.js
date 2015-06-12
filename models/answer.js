@@ -1,4 +1,4 @@
-AuctionHouse.Item = DS.Model.extend({
+QandA.Answer = DS.Model.extend({
   title: DS.attr(),
   description: DS.attr(),
   owner: DS.attr(),
@@ -7,5 +7,5 @@ AuctionHouse.Item = DS.Model.extend({
   backstory: DS.attr(),
   year_acquired: DS.attr(),
   image: DS.attr(),
-  lot: DS.belongsTo('lot', {async: true})
+  question: DS.belongsTo('question', {async: true})
 });

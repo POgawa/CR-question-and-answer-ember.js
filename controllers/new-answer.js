@@ -1,8 +1,8 @@
-AuctionHouse.NewItemController = Ember.Controller.extend({
-  needs: ['lot'],
+QandA.NewAnswerController = Ember.Controller.extend({
+  needs: ['question'],
   actions: {
     save: function() {
-      var item = this.store.createRecord('item', {
+      var answer = this.store.createRecord('answer', {
         title: this.get('title'),
         description: this.get('description'),
         owner: this.get('owner'),
@@ -14,11 +14,11 @@ AuctionHouse.NewItemController = Ember.Controller.extend({
       });
 
 
-      item.save();
+      answer.save();
 
-      var lot = this.get('controllers.lot.model');
-      lot.get('items').pushObject(item);
-      lot.save();
+      var question = this.get('controllers.question.model');
+      question.get('items').pushObject(answer);
+      question.save();
 
 
       this.set('title', '');
@@ -29,7 +29,7 @@ AuctionHouse.NewItemController = Ember.Controller.extend({
       this.set('year_acquired', '');
       this.set('image', '');
 
-      this.transitionToRoute('lot', lot.id);
+      this.transitionToRoute('question', question.id);
     }
   }
 

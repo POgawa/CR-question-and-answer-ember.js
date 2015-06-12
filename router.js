@@ -1,9 +1,9 @@
-AuctionHouse.Router.map(function() {
-  this.resource('items');
-  this.resource('item', {path: 'item/:item_id'})
-  this.resource('lots', {path: '/'});
-  this.resource('lot', {path: 'lot/:lot_id'}, function(){
-      this.resource('new-item');
+QandA.Router.map(function() {
+  this.resource('answers');
+  this.resource('answer', {path: 'answer/:answer_id'})
+  this.resource('questions', {path: '/'});
+  this.resource('question', {path: 'question/:question_id'}, function(){
+      this.resource('new-answer');
   })
-  this.resource('new-lot');
+  this.resource('new-question');
 });

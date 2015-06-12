@@ -3,7 +3,7 @@
 <ul class="itemlist">
 {{#each}}
   <li>
-    {{#link-to 'item' this.id}}<img src={{image}}>{{/link-to}}
+    {{#link-to 'answer' this.id}}<img src={{image}}>{{/link-to}}
     <p>
       Owner: {{owner}} ||
 
@@ -15,4 +15,4 @@
 {{/each}}
 </ul>
 
-<p>{{#link-to 'new-item' classNames="btn btn-primary"}}Add New Item{{/link-to}}</p>
+<p>{{#link-to 'new-answer' classNames="btn btn-primary"}}Add New Item{{/link-to}}</p>

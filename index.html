@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Auction House</title>
+    <title>Q and A</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="libs/jquery-1.11.3.js"></script>
@@ -13,22 +13,22 @@
     <link rel="stylesheet" href="css/styles.css">
 
 
-    <script src="auctionhouse.js"></script>
+    <script src="QandA.js"></script>
     <script src="router.js"></script>
     <script src="store.js"></script>
 
-    <script src="routes/items.js"></script>
-    <script src="routes/lots.js"></script>
+    <script src="routes/answers.js"></script>
+    <script src="routes/questions.js"></script>
 
-    <script src="models/item.js"></script>
-    <script src="models/lot.js"></script>
+    <script src="models/answer.js"></script>
+    <script src="models/question.js"></script>
 
-    <script src="controllers/item.js"></script>
-    <script src="controllers/items.js"></script>
-    <script src="controllers/new-item.js"></script>
-    <script src="controllers/lot.js"></script>
-    <script src="controllers/lots.js"></script>
-    <script src="controllers/new-lot.js"></script>
+    <script src="controllers/answer.js"></script>
+    <script src="controllers/answers.js"></script>
+    <script src="controllers/new-answer.js"></script>
+    <script src="controllers/question.js"></script>
+    <script src="controllers/questions.js"></script>
+    <script src="controllers/new-question.js"></script>
 
 
 
@@ -36,7 +36,7 @@
 
     <script>
       EmberHandlebarsLoader.loadTemplates([
-        'items', 'new-item', 'item', 'lots', 'new-lot', 'application', 'lot'
+        'answers', 'new-answer', 'answer', 'questions', 'new-question', 'application', 'question'
       ]);
     </script>
   </head>
