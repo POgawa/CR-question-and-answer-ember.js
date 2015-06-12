@@ -1,23 +1,22 @@
+{{#if questions}}
 
+  <h2>Current Questions:</h2>
+  <hr>
+  <ul class="qlist">
+  {{#each}}
 
-<h2>Current Questions:</h2>
-<hr>
-<ul class="qlist">
-{{#each}}
+    <li>
+      <h3>  {{#link-to 'question' this.id classNames="q-title"}}{{title}}{{/link-to}}</h3> asked by: {{author}}
+    </li>
+  {{/each}}
+  </ul>
+  <hr>
+  <p>{{#link-to 'new-question' classNames="btn btn-success"}}Ask Another Question{{/link-to}}</p>
 
-  <li>
-    <h3>  {{#link-to 'question' this.id classNames="q-title"}}{{title}}{{/link-to}}</h3> asked by: {{author}}
-  </li>
-{{/each}}
-</ul>
-<hr>
-<p>{{#link-to 'new-question' classNames="btn btn-success"}}Ask New Question{{/link-to}}</p>
-<!-- <p>Items List</p>
-<ul>
+{{else}}
 
-  {{controllers.answers.title}}
-  {{#each controllers.answers.model}}
-
-    <li>{{title}}</li>
-  {{/each}} -->
-<!-- </ul> -->
+  <h1>You have no current questions!!</h1>
+  <hr>
+  <br>
+  <p>{{#link-to 'new-question' classNames="btn btn-block btn-success"}}Ask New Question{{/link-to}}</p>
+{{/if}}

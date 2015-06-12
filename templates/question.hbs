@@ -38,7 +38,7 @@
      {{outlet}}
   {{else}}
     <h1>There are no answers currently.</h1>
-    <p>{{#link-to 'new-answer' this.id classNames="btn btn-primary"}}Answer this question{{/link-to}}</p>
+    <p>{{#link-to 'new-answer' this.id classNames="btn btn-primary"}}Please answer this question{{/link-to}}</p>
      {{outlet}}
   {{/if}}
   <button class="btn btn-primary" {{action 'edit'}}>Edit question</button>
