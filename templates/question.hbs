@@ -13,22 +13,23 @@
     {{input id="date" class="form-control" value=date}}
   <br>
 
-      <button class="btn btn-primary" {{action 'save'}}>Edit lot</button>
+      <button class="btn btn-primary" {{action 'save'}}>Edit question</button>
   </form>
 {{else}}
-  <h3>Description: {{description}}</h3>
-
+  <h3>Description: <i> {{description}}</i></h3>
+<hr>
   <h3>Date asked: {{date}}</h3>
-
+<hr>
   <h2>Answers:</h2>
-
+<hr>
   <ul class="lotlist">
 
     {{#each answers}}
      <li class="flat">
        <h4>Response:</h4>
-       <p>     {{description}}</p>
-       <p>     on {{date}} by {{owner}}</p></li>
+       <p>   {{#link-to 'answer' this.id}} <i> {{description}}</i>{{/link-to}}</p>
+       <p> Answered on: {{date}} by {{owner}}</p></li>
+       <hr>
     {{/each}}
 
   </ul>

@@ -31,32 +31,16 @@
 {{else}}
 
 
+<hr>
 
-
-  <img class= 'full img-thumbnail' src={{image}}>  <p>
+    <p>
       Description: {{description}}
     </p>
 
     <p>
-      Owner: {{owner}}
+      User: {{owner}}
     </p>
-
-
-    <p>
-      Bid number: {{bid_number}}
-    </p>
-
-    <p>
-      Starting price: ${{starting_price}}
-    </p>
-
-    <p>
-      Backstory: {{backstory}}
-    </p>
-
-    <p>
-      Year acquired: {{year_acquired}}
-    </p>
+<br>
 
   <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
   <button class="btn btn-danger" {{action 'delete'}}>Delete</button>
