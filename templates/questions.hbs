@@ -1,18 +1,18 @@
 
 
-<h3>Current Questions:</h3>
+<h2>Current Questions:</h2>
 {{currentDate}}
 <hr>
 <ul class="lotlist">
 {{#each}}
 
   <li>
-    {{#link-to 'question' this.id classNames="question-title"}}{{title}}{{/link-to}}
+    <h3>  {{#link-to 'question' this.id classNames="question-title"}}{{title}}{{/link-to}}</h3> asked by: {{author}}
   </li>
 {{/each}}
 </ul>
 <hr>
-<p>{{#link-to 'new-question' classNames="btn btn-primary"}}Ask New Question{{/link-to}}</p>
+<p>{{#link-to 'new-question' classNames="btn btn-success"}}Ask New Question{{/link-to}}</p>
 <!-- <p>Items List</p>
 <ul>
 

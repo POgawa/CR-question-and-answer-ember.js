@@ -1,4 +1,4 @@
-<h1> Lot title: {{title}}</h1>
+<h1> Your question: {{title}}</h1>
 
 {{#if isEditing}}
 
@@ -25,14 +25,17 @@
   <ul class="lotlist">
 
     {{#each answers}}
-     <li class="flat"> {{title}} {{description}}</li>
+     <li class="flat">
+       <h4>Response:</h4>
+       <p>     {{description}}</p>
+       <p>     on {{date}} by {{owner}}</p></li>
     {{/each}}
 
   </ul>
-  <p>{{#link-to 'new-answer' this.id classNames="btn btn-primary"}}Add New Item to this lot{{/link-to}}</p>
+  <p>{{#link-to 'new-answer' this.id classNames="btn btn-primary"}}Answer this question{{/link-to}}</p>
    {{outlet}}
 
 
-  <button class="btn btn-primary" {{action 'edit'}}>Edit lot</button>
-  <button class="btn btn-danger" {{action 'delete'}}>Delete lot</button>
+  <button class="btn btn-primary" {{action 'edit'}}>Edit question</button>
+  <button class="btn btn-danger" {{action 'delete'}}>Delete question</button>
 {{/if}}

@@ -2,26 +2,12 @@
 
 
 <form>
-  <label for="title">Item title</label>
-  {{input id="title" class="form-control" value=title}}
 
-  <label for="description">Item description</label>
+  <label for="description">Your answer</label>
   {{textarea id="description" class="form-control" value=description}}
 
-  <label for="owner">Item owner</label>
+  <label for="owner">Answerer</label>
   {{input id="owner" class="form-control" value=owner}}
-
-  <label for="starting_price">Item starting price</label>
-  {{input id="starting_price" class="form-control" value=starting_price}}
-
-  <label for="backstory">Item backstory</label>
-  {{input id="backstory" class="form-control" value=backstory}}
-
-  <label for="year_acquired">Year acquired</label>
-  {{input id="year_acquired" class="form-control" value=year_acquired}}
-
-  <label for="image">Item image</label>
-  {{input id="image" class="form-control" value=image}}
 
 <br>
     <button class="btn btn-primary" {{action 'save'}}>Save</button>
