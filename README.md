@@ -18,7 +18,7 @@ python -m SimpleHTTPServer
 open http://127.0.0.1:8000/ in your browser
 
 
-##See it live on https://www.bitballoon.com/sites/pancakestackoverflow
+##See it live on http://pancakestackoverflow.bitballoon.com/
 ```
 
 ### Bug reports
