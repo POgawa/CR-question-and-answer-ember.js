@@ -5,7 +5,7 @@ QandA.NewQuestionController = Ember.Controller.extend({
         title: this.get('title'),
         description: this.get('description'),
         author: this.get('author'),
-        date: Date.now(),
+        date: new Date().toLocaleString(),
       });
 
       question.save();

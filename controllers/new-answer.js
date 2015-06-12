@@ -5,7 +5,7 @@ QandA.NewAnswerController = Ember.Controller.extend({
       var answer = this.store.createRecord('answer', {
         description: this.get('description'),
         owner: this.get('owner'),
-        date: Date.now(),
+        date: new Date().toLocaleString(),
       });
 
 

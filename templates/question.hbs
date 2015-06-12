@@ -9,11 +9,9 @@
     <label for="description">Description</label>
     {{textarea id="description" class="form-control" value=description}}
 
-    <label for="date">Date</label>
-    {{input id="date" class="form-control" value=date}}
   <br>
 
-      <button class="btn btn-primary" {{action 'save'}}>Edit question</button>
+      <button class="btn btn-success" {{action 'save'}}>Edit question</button>
   </form>
 {{else}}
   <h3>Description: <i> {{description}}</i></h3>
@@ -34,11 +32,11 @@
       {{/each}}
 
     </ul>
-    <p>{{#link-to 'new-answer' this.id classNames="btn btn-primary"}}Add another answer to this question{{/link-to}}</p>
+    <p>{{#link-to 'new-answer' this.id classNames="btn btn-success"}}Add another answer to this question{{/link-to}}</p>
      {{outlet}}
   {{else}}
     <h1>There are no answers currently.</h1>
-    <p>{{#link-to 'new-answer' this.id classNames="btn btn-primary"}}Please answer this question{{/link-to}}</p>
+    <p>{{#link-to 'new-answer' this.id classNames="btn btn-success"}}Please answer this question{{/link-to}}</p>
      {{outlet}}
   {{/if}}
   <button class="btn btn-primary" {{action 'edit'}}>Edit question</button>
