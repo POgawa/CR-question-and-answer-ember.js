@@ -1,14 +1,34 @@
-##EmberJS Code Review
+#Ember Q and A board
 
-## By Paul Ogawa www.github.com/pogawa
-#The project:
+## Contributor(s):
+1. Paul Ogawa (https://github.com/Pogawa)
 
-#For this project, you will make a question and answer message board. The idea is that a user can submit a question and other users can respond with answers.
 
-#Here are the features to include:
+##Date: Started June 12, 2015
 
-List out all of the questions that users have asked on the main page, with just the question and the name of the author.
-Allow users to add, edit and delete questions. Question properties should include question, author and description.
-Let users click on a question to see all of the question properties.
-Allow users to add answers for a question. Answers should be added and viewed on the same page as the question they respond to.
-Allow users to delete answers.
+## Installation
+
+
+git clone this repo
+
+run
+
+python -m SimpleHTTPServer
+
+open http://127.0.0.1:8000/ in your browser
+
+
+##See it live on https://www.bitballoon.com/sites/pancakestackoverflow
+```
+
+### Bug reports
+
+If you discover any bugs, feel free to create an issue on GitHub. Please add as much information as
+possible to help us fixing the possible bug. We also encourage you to help even more by forking and
+sending us a pull request.
+
+
+
+## License
+
+MIT License. Copyright 2015
