@@ -1,13 +1,12 @@
 
 
 <h2>Current Questions:</h2>
-{{currentDate}}
 <hr>
-<ul class="lotlist">
+<ul class="qlist">
 {{#each}}
 
   <li>
-    <h3>  {{#link-to 'question' this.id classNames="question-title"}}{{title}}{{/link-to}}</h3> asked by: {{author}}
+    <h3>  {{#link-to 'question' this.id classNames="q-title"}}{{title}}{{/link-to}}</h3> asked by: {{author}}
   </li>
 {{/each}}
 </ul>

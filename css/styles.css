@@ -18,16 +18,16 @@ li {
   list-style: none;
 }
 
-.itemlist li img {
+.alist li img {
   width: 50%;
 }
 
-.lotlist li img {
+.qlist li img {
   width: 25%;
   min-height:25%;
 }
 
-.lot-title {
+.q-title {
   color: #CF5300;
 }
 
@@ -39,7 +39,9 @@ li {
 
 .flat{
   display:inline;
-}@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");/*!
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");/*!
  * bootswatch v3.3.4+1
  * Homepage: http://bootswatch.com
  * Copyright 2012-2015 Thomas Park
